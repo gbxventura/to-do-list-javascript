@@ -1,30 +1,32 @@
 :root {
 	--timer-color: #887bd3;
 	--color-dark: rgb(14, 14, 14);
-    --color-dark2: rgb(32, 32, 32);
-    --color-dark3: rgb(22, 22, 22);
-    --color-white: #fff;
-    --color-green: rgb(103, 195, 80);
-    --color-green2: rgb(51, 149, 26);
-    --color-red: rgb(184, 40, 35);
-    --color-red: rgb(146, 22, 17);
-    --purple: rgb(153, 50, 204);
-    --dark-orange: rgb(255, 140, 0);
-    --darkSlateGray: rgb(47, 79, 79);
+	--color-dark2: rgb(32, 32, 32);
+	--color-dark3: rgb(22, 22, 22);
+	--color-white: #fff;
+	--color-green: rgb(103, 195, 80);
+	--color-green2: rgb(51, 149, 26);
+	--color-red: rgb(184, 40, 35);
+	--color-red: rgb(146, 22, 17);
+	--purple: rgb(153, 50, 204);
+	--dark-orange: rgb(255, 140, 0);
+	--darkSlateGray: rgb(47, 79, 79);
 }
 
-html, body {
+html,
+body {
 	height: 100%;
 }
 
 body {
-	margin: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #e7e7e7;
-
-	background-image: linear-gradient(to left, var(--color-dark), var(--color-dark2), var(--color-dark3));
-    color: var(--color-white);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorsrt='#3023ae', endColor='#c86dd7');
+	font-family: 'Lato';
+	background-color: var(--color-dark2);
+	/* background-image: linear-gradient(to left, var(--color-dark2), var(--color-dark3)); */
+	color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4rem;
 }
 
 button {
@@ -64,7 +66,9 @@ button:hover {
 	position: relative;
 }
 
-.time, .config, .config-tooltip-text  {
+.time,
+.config,
+.config-tooltip-text {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -89,7 +93,8 @@ button:hover {
 	transition: opacity 0.6s;
 }
 
-.config:hover, .config:hover .config-tooltip-text {
+.config:hover,
+.config:hover .config-tooltip-text {
 	opacity: 80%;
 	transition: opacity 0.6s;
 }
@@ -103,7 +108,8 @@ button:hover {
 	transform: rotate(-90deg);
 }
 
-.background-circle, .circle {
+.background-circle,
+.circle {
 	fill: none;
 }
 
@@ -127,7 +133,7 @@ button:hover {
 	margin-top: 10px;
 }
 
-.select-options > select {
+.select-options>select {
 	background-color: var(--timer-color);
 	border: 1px solid rgba(255, 255, 255, .1);
 	border-radius: 5px;
@@ -137,7 +143,7 @@ button:hover {
 	transition: opacity 0.6s;
 }
 
-.select-options > select:hover {
+.select-options>select:hover {
 	opacity: 100%;
 	transition: opacity 0.6s;
 }
@@ -148,11 +154,11 @@ button:hover {
 	display: none;
 }
 
-.config-message > span {
+.config-message>span {
 	position: absolute;
 	transform: translate(-50%, -50%);
 }
 
-.config-message > span > a {
+.config-message>span>a {
 	color: tomato;
 }

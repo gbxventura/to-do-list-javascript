@@ -19,7 +19,8 @@
 }
 body {
     font-family: 'Lato';
-    background-image: linear-gradient(to left, var(--color-dark), var(--color-dark2), var(--color-dark3));
+    background-color: var(--color-dark2);
+    /* background-image: linear-gradient(to left,var(--color-dark2), var(--color-dark3)); */
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -38,6 +39,7 @@ body {
     align-items: center;
     gap: 0.5rem;
     flex-wrap: wrap;
+    flex-direction: row;
 
 }
 
