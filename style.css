@@ -11,12 +11,14 @@
     --dark-orange: rgb(255, 140, 0);
     --darkSlateGray: rgb(47, 79, 79);
 }
-#pomo{
+
+#pomo {
     min-width: 3000px;
     height: 450px;
 
- 
+
 }
+
 body {
     font-family: 'Lato';
     background-color: var(--color-dark2);
@@ -39,7 +41,7 @@ body {
     align-items: center;
     gap: 1rem;
     flex-wrap: wrap;
-    flex-direction: row;
+
 
 }
 
